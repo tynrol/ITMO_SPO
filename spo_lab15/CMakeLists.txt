@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(spo_lab_1_5 C)
+project(spo_lab15 C)
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 set(CMAKE_MODULE_PATH "${CMAKE_HOME_DIRECTORY}/module")
@@ -26,7 +26,7 @@ message("CMAKE_SOURCE_DIR ${CMAKE_SOURCE_DIR}")
 message("CMAKE_CURRENT_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}")
 
 add_executable(
-        spo_lab_1_5
+        main
         src/main.c
         src/cursor/cursor.c src/cursor/cursor.h
         src/client/client.c src/client/client.h

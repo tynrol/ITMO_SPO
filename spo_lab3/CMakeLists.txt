@@ -9,7 +9,17 @@ find_package(Curses REQUIRED)
 
 include_directories(${CURSES_INCLUDE_DIR})
 
-add_executable(main main.c server.c server.h utils.c utils.h client.c client.h ui.c ui.h)
+add_executable(
+        main
+        src/main.c
+        src/server.c
+        src/server.h
+        src/utils.c
+        src/utils.h
+        src/client.c
+        src/client.h
+        src/ui.c
+        src/ui.h)
 #target_compile_features(main -)
 
 target_link_libraries(main PRIVATE ${CURSES_LIBRARIES} Threads::Threads)
